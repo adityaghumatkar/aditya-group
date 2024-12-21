@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ destination.name }}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>{{ destination.name }}</h1>
+        <p>{{ destination.location }}</p>
+    </header>
+    <main>
+        <img src="/static/images/{{ destination.image }}" alt="{{ destination.name }}">
+        <p>{{ destination.description }}</p>
+        <a href="/">Back to Home</a>
+    </main>
+</body>
+</html>

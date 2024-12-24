@@ -29,6 +29,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 28px;
 }
 
 .card-img-custom {
@@ -255,3 +256,121 @@ p{
 .NE{
     background-image: url('/static/images/NE.jpg');
 }
+
+.contaner-main-heading{
+    color:white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contaner-main-sub-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size:64px;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.btn-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centers vertically */
+}
+
+.underline-container{
+    background-color:rgb(244,140,44);
+    height: 4px;
+    width: 10%;
+    margin: 0 auto;
+}
+
+.slideshow-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Overlay Effect */
+.slideshow-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Same as images to fade them */
+    pointer-events: none; /* Allow clicks on foreground content */
+}
+
+.slideshow-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: scale(1); /* Start at normal size */
+    transition: opacity 2s ease-in-out;
+    /* transition: opacity 2s ease-in-out, transform 16s ease-in-out; Smooth zoom and fade */
+    z-index: 1;
+}
+
+
+.details-main{
+    position: absolute;
+    z-index: 2 !important;
+    width: -webkit-fill-available;
+}
+/* Define the images */
+.image1 {
+    background-image: url('/static/images/himachalHD.jpeg');
+    animation: fadeZoom 16s infinite 0s;
+}
+.image2 {
+    background-image: url('/static/images/rajasthanHD.jpg');
+    animation: fadeZoom 16s infinite 4s;
+}
+.image3 {
+    background-image: url('/static/images/nature.jpg');
+    animation: fadeZoom 16s infinite 8s;
+}
+.image4 {
+    background-image: url('/static/images/nature2.jpg');
+    animation: fadeZoom 16s infinite 12s;
+}
+
+/* Keyframes for fading */
+/* Keyframes for fading and zooming */
+@keyframes fadeZoom {
+    0%, 25% {
+        opacity: 1;
+        transform: scale(1); /* Start normal size */
+    }
+    30%, 100% {
+        opacity: 0;
+        transform: scale(1.1); /* Slightly zoomed */
+    }
+}
+@keyframes zoomFade {
+    0% {
+        opacity: 1;
+        transform: scale(1); /* Start normal size */
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1); /* Zoom in while fully visible */
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1.2); /* Continue zooming */
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.2); /* Fading out at the maximum zoom */
+    }
+}
+

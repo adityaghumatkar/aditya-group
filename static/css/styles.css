@@ -565,7 +565,7 @@ p {
 .testimonial {
     min-height: 375px;
     position: relative;
-    background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
+    /* background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg); */
     padding-top: 50px;
     padding-bottom: 50px;
     background-position: center;
@@ -740,3 +740,30 @@ p {
     height: 35px;
 }
 /* ------testimonial  close-------*/
+.footer {
+    background: url('/static/images/nature.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.footer-overlay {
+    /* background: rgba(0, 0, 0, 0.7); Semi-transparent black for readability */
+    background: rgba(145, 145, 145, 0.6);
+    padding: 50px 0;
+    backdrop-filter: blur(5px); /* Adds a soft blur effect */
+}
+
+.footer-bottom {
+    /* background: #111; */
+    background: rgba(145, 145, 145, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px); /* Adds a soft blur effect */
+}
+.footer h5 {
+    color: #ffcc00; /* Golden yellow for headings */
+}
+
+.footer a:hover {
+    color: #ffcc00; /* Highlight links on hover */
+}
+
+/* footer */

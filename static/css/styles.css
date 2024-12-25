@@ -767,3 +767,131 @@ p {
 }
 
 /* footer */
+
+
+/* Mobile-specific styles for iPhone 15 (390px width) */
+@media only screen and (max-width: 390px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar {
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        padding: 10px;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .call-now-btn {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+
+    .slideshow-container {
+        height: 50vh;
+    }
+
+    .contaner-main-heading {
+        font-size: 24px;
+    }
+
+    .contaner-main-sub-heading {
+        font-size: 32px;
+    }
+
+    .btn-container .btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-custom {
+        width: 90%;
+        margin: 0.5rem 0;
+    }
+
+    .about-us {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .about-us-info-heading {
+        font-size: 20px;
+    }
+
+    .about-us-info-sub-heading {
+        font-size: 24px;
+    }
+
+    .about-us-info-text {
+        font-size: 14px;
+    }
+
+    .services-heading {
+        font-size: 24px;
+    }
+
+    .services .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .seperator-heading {
+        font-size: 24px;
+    }
+
+    .card-container-flip-main {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .card-container-flip {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-flip {
+        height: auto;
+    }
+
+    .card-front-flip,
+    .card-back-flip {
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer .container {
+        padding: 0 10px;
+    }
+
+    .footer h5 {
+        font-size: 16px;
+    }
+
+    .footer p,
+    .footer a {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        padding: 10px 0;
+    }
+}

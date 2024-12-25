@@ -10,11 +10,15 @@ body {
     z-index: -2;
     position: relative;
 
-    margin: 0; /* Remove default margins */
-    height: 100vh; /* Ensure it covers the full viewport height */
+    margin: 0;
+    /* Remove default margins */
+    height: 100vh;
+    /* Ensure it covers the full viewport height */
     background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
-    background-size: 20px 20px; /* Adjust the size of the pattern */
-    background-color: #f9f9f9; /* Base color */
+    background-size: 20px 20px;
+    /* Adjust the size of the pattern */
+    background-color: #f9f9f9;
+    /* Base color */
 
 }
 
@@ -73,49 +77,52 @@ body {
 }
 
 
-.about-us{
+.about-us {
     padding-left: 32px;
     padding-right: 32px;
 }
 
-p{
+p {
     font-size: 18px;
 }
-.about-us-info-heading{
-    color: rgb(244,140,44);
-}
-.about-us-info-sub-heading{
-    color:#44786b;
+
+.about-us-info-heading {
+    color: rgb(244, 140, 44);
 }
 
-.about-us-info-sub-heading-underline{
-    background-color:rgb(244,140,44);
+.about-us-info-sub-heading {
+    color: #44786b;
+}
+
+.about-us-info-sub-heading-underline {
+    background-color: rgb(244, 140, 44);
     height: 4px;
     width: 18%;
     margin-bottom: 6px;
 }
 
-.about-us-info-text{
+.about-us-info-text {
     color: gray;
     font-size: 17px;
 }
 
-.btn-custom{
-    background-color:#f48c2c;
+.btn-custom {
+    background-color: #f48c2c;
     color: white;
     border-radius: 24pc;
 
 }
 
-.btn-custom:hover{
-    background-color:#44786b;
+.btn-custom:hover {
+    background-color: #44786b;
     color: white;
 }
 
 /*Flipping cards*/
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
     padding: 20px;
     width: fit-content;
     gap: 20px;
@@ -125,7 +132,8 @@ p{
 
 
 .card-container-flip {
-    perspective: 1000px; /* Enables 3D perspective */
+    perspective: 1000px;
+    /* Enables 3D perspective */
     width: 405px;
     height: 405px;
     border-radius: 8px;
@@ -135,20 +143,25 @@ p{
     width: 100%;
     height: 100%;
     position: relative;
-    transform-style: preserve-3d; /* Ensures child elements are in 3D space */
-    transition: transform 0.6s; /* Smooth flipping animation */
+    transform-style: preserve-3d;
+    /* Ensures child elements are in 3D space */
+    transition: transform 0.6s;
+    /* Smooth flipping animation */
     border-radius: 8px;
 }
 
 .card-container-flip:hover .card-flip {
-    transform: rotateX(180deg); /* Flip vertically on hover */
+    transform: rotateX(180deg);
+    /* Flip vertically on hover */
 }
 
-.card-front-flip, .card-back-flip {
+.card-front-flip,
+.card-back-flip {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Hides the back side when not flipped */
+    backface-visibility: hidden;
+    /* Hides the back side when not flipped */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,7 +180,8 @@ p{
 
     background-size: cover;
     background-position: center;
-    transform: rotateX(180deg); /* Flips the back side to be hidden initially */
+    transform: rotateX(180deg);
+    /* Flips the back side to be hidden initially */
     color: white;
     text-align: center;
     position: relative;
@@ -180,114 +194,129 @@ p{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(68, 120, 107, 0.7); /* Semi-transparent green overlay */
-    z-index: 1; /* Ensures the overlay appears above the background image */
+    background-color: rgba(68, 120, 107, 0.7);
+    /* Semi-transparent green overlay */
+    z-index: 1;
+    /* Ensures the overlay appears above the background image */
     border-radius: 10px;
 }
 
 .card-back-flip p {
     position: relative;
-    z-index: 2; /* Ensures text is above the overlay */
+    z-index: 2;
+    /* Ensures text is above the overlay */
     margin: 10px;
 }
 
 
-.btn-custom-explore{
+.btn-custom-explore {
     position: absolute;
     bottom: 0;
     color: white;
     z-index: 2;
     border: 2px solid white;
     border-radius: 24pc;
-    margin-bottom:12px;
+    margin-bottom: 12px;
 }
 
-.btn-custom-explore:hover{
+.btn-custom-explore:hover {
     border: 2px solid white;
     border-radius: 24pc;
 }
 
-.seperator{
+.seperator {
     display: flex;
-    flex-direction: column; /* Stacks the h3 and p vertically */
-    justify-content: center; /* Centers vertically */
-    align-items: center; /* Centers horizontally */
+    flex-direction: column;
+    /* Stacks the h3 and p vertically */
+    justify-content: center;
+    /* Centers vertically */
+    align-items: center;
+    /* Centers horizontally */
     text-align: center;
     margin-top: 32px;
 }
 
-.seperator-sub-heading{
+.seperator-sub-heading {
     color: #636363;
     align-self: center;
 }
 
-.blank{
+.blank {
     display: inline-block;
     width: 28px;
     height: 2px !important;
 }
 
-.ampersand-symbol{
-    color:#f48c2c;
+.ampersand-symbol {
+    color: #f48c2c;
     display: inline-block;
 
 }
 
-.seperator-heading{
+.seperator-heading {
     color: #44786b;
 }
 
-.LEH{
+.LEH {
     background-image: url('/static/images/LEH400.png');
 }
-.rajasthan{
+
+.rajasthan {
     background-image: url('/static/images/Rajasthan400.png');
 }
-.uttarakhand{
+
+.uttarakhand {
     background-image: url('/static/images/uttarakhand400.png');
 }
-.kerala{
+
+.kerala {
     background-image: url('/static/images/kerala400.png');
 }
-.himachal{
+
+.himachal {
     background-image: url('/static/images/Himachal400.png');
 }
-.kashmir{
+
+.kashmir {
     background-image: url('/static/images/kashmir.jpg');
 }
-.goa{
+
+.goa {
     background-image: url('/static/images/Goa.jpg');
 }
-.delhi{
+
+.delhi {
     background-image: url('/static/images/Delhi.jpg');
 }
-.NE{
+
+.NE {
     background-image: url('/static/images/NE.jpg');
 }
 
-.contaner-main-heading{
-    color:white;
+.contaner-main-heading {
+    color: white;
     text-align: center;
     margin-top: 20px;
     font-size: 44px;
 }
 
-.contaner-main-sub-heading{
+.contaner-main-sub-heading {
     text-align: center;
     font-weight: bold;
-    font-size:64px;
+    font-size: 64px;
     color: white;
     margin-bottom: 32px;
 }
 
-.btn-container{
+.btn-container {
     display: flex;
     gap: 20px;
-    justify-content: center; /* Centers vertically */
+    justify-content: center;
+    /* Centers vertically */
 }
 
-.underline-container{
-    background-color:rgb(244,140,44);
+.underline-container {
+    background-color: rgb(244, 140, 44);
     height: 4px;
     width: 10%;
     margin: 0 auto;
@@ -310,9 +339,12 @@ p{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-    z-index: 1; /* Same as images to fade them */
-    pointer-events: none; /* Allow clicks on foreground content */
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black overlay */
+    z-index: 1;
+    /* Same as images to fade them */
+    pointer-events: none;
+    /* Allow clicks on foreground content */
 }
 
 .slideshow-image {
@@ -322,32 +354,37 @@ p{
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transform: scale(1); /* Start at normal size */
+    transform: scale(1);
+    /* Start at normal size */
     transition: opacity 2s ease-in-out;
     /* transition: opacity 2s ease-in-out, transform 16s ease-in-out; Smooth zoom and fade */
     z-index: 1;
 }
 
 
-.details-main{
+.details-main {
     position: absolute;
     z-index: 2 !important;
     width: -webkit-fill-available;
     top: 30%;
 }
+
 /* Define the images */
 .image1 {
     background-image: url('/static/images/himachalHD.jpeg');
     animation: fadeZoom 16s infinite 0s;
 }
+
 .image2 {
     background-image: url('/static/images/rajasthanHD.jpg');
     animation: fadeZoom 16s infinite 4s;
 }
+
 .image3 {
     background-image: url('/static/images/nature.jpg');
     animation: fadeZoom 16s infinite 8s;
 }
+
 .image4 {
     background-image: url('/static/images/nature2.jpg');
     animation: fadeZoom 16s infinite 12s;
@@ -356,31 +393,45 @@ p{
 /* Keyframes for fading */
 /* Keyframes for fading and zooming */
 @keyframes fadeZoom {
-    0%, 25% {
+
+    0%,
+    25% {
         opacity: 1;
-        transform: scale(1); /* Start normal size */
+        transform: scale(1);
+        /* Start normal size */
     }
-    30%, 100% {
+
+    30%,
+    100% {
         opacity: 0;
-        transform: scale(1.1); /* Slightly zoomed */
+        transform: scale(1.1);
+        /* Slightly zoomed */
     }
 }
+
 @keyframes zoomFade {
     0% {
         opacity: 1;
-        transform: scale(1); /* Start normal size */
+        transform: scale(1);
+        /* Start normal size */
     }
+
     50% {
         opacity: 1;
-        transform: scale(1.1); /* Zoom in while fully visible */
+        transform: scale(1.1);
+        /* Zoom in while fully visible */
     }
+
     70% {
         opacity: 1;
-        transform: scale(1.2); /* Continue zooming */
+        transform: scale(1.2);
+        /* Continue zooming */
     }
+
     100% {
         opacity: 0;
-        transform: scale(1.2); /* Fading out at the maximum zoom */
+        transform: scale(1.2);
+        /* Fading out at the maximum zoom */
     }
 }
 
@@ -391,21 +442,26 @@ p{
     max-width: 90%;
     margin: 0 auto;
     position: fixed;
-    top: 24px; left: 50%;
+    top: 24px;
+    left: 50%;
     transform: translateX(-50%);
     z-index: 3;
     border-radius: 8px;
 }
+
 .navbar-brand img {
     height: 90px;
 }
+
 .nav-link {
     color: #000000 !important;
     font-weight: 500;
 }
+
 .nav-link:hover {
     color: #ff6600 !important;
 }
+
 .call-now-btn {
     background-color: #32a852;
     color: #ffffff !important;
@@ -413,10 +469,39 @@ p{
     /* border-radius: 20px; */
     padding: 8px 20px;
 }
+
 .call-now-btn:hover {
-    background-color: rgb(244,140,44);
+    background-color: #f48c2c;
 }
 
-.call-img{
+.call-img {
     width: 24px;
+}
+
+
+.dropdown-menu {}
+
+.dropdown-item {
+    line-height: 2;
+}
+
+.dropdown-item:hover {
+    background-color: #44786b;
+    color: white;
+}
+
+.services {
+
+}
+
+.services-heading {
+    color: #44786b;
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
 }

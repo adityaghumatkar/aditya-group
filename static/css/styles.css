@@ -2,7 +2,7 @@
 body {
 
     font-family: 'Segoe UI';
-    /* background-image: url('/static/images/taj_mahal.jpg');
+    /* background-image: url('../images/taj_mahal.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
@@ -258,39 +258,39 @@ p {
 }
 
 .LEH {
-    background-image: url('/static/images/LEH400.png');
+    background-image: url('../images/LEH400.png');
 }
 
 .rajasthan {
-    background-image: url('/static/images/Rajasthan400.png');
+    background-image: url('../images/Rajasthan400.png');
 }
 
 .uttarakhand {
-    background-image: url('/static/images/uttarakhand400.png');
+    background-image: url('../images/uttarakhand400.png');
 }
 
 .kerala {
-    background-image: url('/static/images/kerala400.png');
+    background-image: url('../images/kerala400.png');
 }
 
 .himachal {
-    background-image: url('/static/images/Himachal400.png');
+    background-image: url('../images/Himachal400.png');
 }
 
 .kashmir {
-    background-image: url('/static/images/kashmir.jpg');
+    background-image: url('../images/kashmir.jpg');
 }
 
 .goa {
-    background-image: url('/static/images/Goa.jpg');
+    background-image: url('../images/Goa.jpg');
 }
 
 .delhi {
-    background-image: url('/static/images/Delhi.jpg');
+    background-image: url('../images/Delhi.jpg');
 }
 
 .NE {
-    background-image: url('/static/images/NE.jpg');
+    background-image: url('../images/NE.jpg');
 }
 
 .contaner-main-heading {
@@ -371,22 +371,22 @@ p {
 
 /* Define the images */
 .image1 {
-    background-image: url('/static/images/himachalHD.jpeg');
+    background-image: url('../images/himachalHD.jpeg');
     animation: fadeZoom 16s infinite 0s;
 }
 
 .image2 {
-    background-image: url('/static/images/rajasthanHD.jpg');
+    background-image: url('../images/rajasthanHD.jpg');
     animation: fadeZoom 16s infinite 4s;
 }
 
 .image3 {
-    background-image: url('/static/images/nature.jpg');
+    background-image: url('../images/nature.jpg');
     animation: fadeZoom 16s infinite 8s;
 }
 
 .image4 {
-    background-image: url('/static/images/nature2.jpg');
+    background-image: url('../images/nature2.jpg');
     animation: fadeZoom 16s infinite 12s;
 }
 
@@ -741,7 +741,7 @@ p {
 }
 /* ------testimonial  close-------*/
 .footer {
-    background: url('/static/images/nature.jpg') no-repeat center center/cover;
+    background: url('../images/nature.jpg') no-repeat center center/cover;
     position: relative;
 }
 

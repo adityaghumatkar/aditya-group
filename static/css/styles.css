@@ -895,3 +895,54 @@ p {
         padding: 10px 0;
     }
 }
+
+/*Query section*/
+.query-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .query-section h2 {
+    text-align: center;
+    /* color: #333; */
+    margin-bottom: 20px;
+  }
+  .query-heading{
+    background-color: #f48c2c;
+    color: white;
+    padding: 2%;
+    border-radius: 6px;
+  }
+  .query-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .query-section input,
+  .query-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .query-section textarea {
+    resize: none;
+    height: 100px;
+  }
+  .query-section button {
+    padding: 10px 20px;
+    background-color: #44786b;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .query-section button:hover {
+    background-color: #f48c2c;
+  }
